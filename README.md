@@ -18,5 +18,6 @@ $ ./build
 $ ./run
 
 
+# Enjoy!
 Enjoy _IRC_ with _Anope_ using your favourite IRC client, eg IRSSI or HEXCHAT.
 All configs are default so the server "name" will be generic, please customise to your liking.
