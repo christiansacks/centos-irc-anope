@@ -6,3 +6,4 @@ cd ~/inspircd/
 cd ~/services/bin/
 ./anoperc start
 
+/bin/bash

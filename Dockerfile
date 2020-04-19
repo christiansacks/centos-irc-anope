@@ -46,7 +46,6 @@ RUN make install
 COPY start_all.sh /home/irc/
 
 WORKDIR /home/irc/
-RUN ./start_all.sh
 
-# Stop container from quitting after running the above
-ENTRYPOINT ["/bin/sh"]
+# This is what runs everything
+ENTRYPOINT ["./start_all.sh"]
