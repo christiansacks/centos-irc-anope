@@ -1,0 +1,69 @@
+OBJECT BotInfo
+DATA nick BotServ
+DATA user services
+DATA host chat.inspircd.co
+DATA realname Bot Service
+DATA created 1587300734
+DATA oper_only 0
+END
+OBJECT BotInfo
+DATA nick ChanServ
+DATA user services
+DATA host chat.inspircd.co
+DATA realname Channel Registration Service
+DATA created 1587300734
+DATA oper_only 0
+END
+OBJECT BotInfo
+DATA nick Global
+DATA user services
+DATA host chat.inspircd.co
+DATA realname Global Noticer
+DATA created 1587300734
+DATA oper_only 0
+END
+OBJECT BotInfo
+DATA nick HostServ
+DATA user services
+DATA host chat.inspircd.co
+DATA realname vHost Service
+DATA created 1587300734
+DATA oper_only 0
+END
+OBJECT BotInfo
+DATA nick MemoServ
+DATA user services
+DATA host chat.inspircd.co
+DATA realname Memo Service
+DATA created 1587300734
+DATA oper_only 0
+END
+OBJECT BotInfo
+DATA nick NickServ
+DATA user services
+DATA host chat.inspircd.co
+DATA realname Nickname Registration Service
+DATA created 1587300734
+DATA oper_only 0
+END
+OBJECT BotInfo
+DATA nick OperServ
+DATA user services
+DATA host chat.inspircd.co
+DATA realname Operator Service
+DATA created 1587300734
+DATA oper_only 0
+END
+OBJECT Stats
+DATA maxusercnt 8
+DATA maxusertime 1587300746
+END
+OBJECT SeenInfo
+DATA nick christian
+DATA vhost christian@10.10.10.1
+DATA type 5
+DATA nick2 
+DATA channel 
+DATA message Quit: leaving
+DATA last 1587300771
+END

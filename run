@@ -1,11 +1,12 @@
 #!/bin/sh
 
 sudo docker run -it -d \
-    -v ~/git/centos-irc-anope/inspircd/conf:/home/irc/inspircd/conf \
     -v ~/git/centos-irc-anope/inspircd/cert:/home/irc/inspircd/cert \
-    -v ~/git/centos-irc-anope/anope/conf:/home/irc/services/conf \
-    -v ~/git/centos-irc-anope/anope/logs:/home/irc/services/logs \
+    -v ~/git/centos-irc-anope/inspircd/conf:/home/irc/inspircd/conf \
     -v ~/git/centos-irc-anope/inspircd/logs:/home/irc/inspircd/logs \
+    -v ~/git/centos-irc-anope/anope/conf:/home/irc/services/conf \
+    -v ~/git/centos-irc-anope/anope/data:/home/irc/services/data \
+    -v ~/git/centos-irc-anope/anope/logs:/home/irc/services/logs \
     -p 6697:6697 \
     --name ircanope \
     --hostname ircanope \
