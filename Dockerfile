@@ -18,8 +18,6 @@ WORKDIR /home/irc/
 RUN wget https://github.com/inspircd/inspircd/archive/v2.0.21.tar.gz
 RUN tar -xzvf v2.0.21.tar.gz
 
-#USER root
-
 WORKDIR /home/irc/inspircd-2.0.21/
 
 RUN ./configure --enable-extras=m_ssl_gnutls.cpp
@@ -49,4 +47,6 @@ COPY start_all.sh /home/irc/
 
 WORKDIR /home/irc/
 RUN ./start_all.sh
+
+# Stop container from quitting after running the above
 ENTRYPOINT ["/bin/sh"]
