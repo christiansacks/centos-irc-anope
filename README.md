@@ -6,9 +6,9 @@ Docker + InspIRCd + Anope on CentOS 7
 $ sudo apt install docker.io
 
 # Then clone this repo
-$ mkdir ~/git 
-$ cd ~/git 
-$ git clone https://github.com/christiansacks/centos-irc-anope.git 
+$ mkdir ~/git  
+$ cd ~/git  
+$ git clone https://github.com/christiansacks/centos-irc-anope.git  
 $ cd centos-irc-anope
 
 # Build container
