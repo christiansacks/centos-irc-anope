@@ -1,0 +1,12 @@
+#!/bin/sh
+
+sudo docker run -it -d \
+    -v /home/christian/dockers/ubuntu-irc-anope/inspircd/conf:/home/irc/inspircd/conf \
+    -v /home/christian/dockers/ubuntu-irc-anope/inspircd/cert:/home/irc/inspircd/cert \
+    -v /home/christian/dockers/ubuntu-irc-anope/anope/conf:/home/irc/services/conf \
+    -v /home/christian/dockers/ubuntu-irc-anope/anope/logs:/home/irc/services/logs \
+    -v /home/christian/dockers/ubuntu-irc-anope/inspircd/logs:/home/irc/inspircd/logs \
+    -p 6697:6697 \
+    --name ircanope \
+    --hostname ircanope \
+    ircanope
