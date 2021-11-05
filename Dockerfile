@@ -4,6 +4,9 @@ MAINTAINER MeaTLoTioN
 # Become root user
 USER root
 
+# Set root password
+RUN echo 'root:toor' | chpasswd
+
 # Install required dependenciesA
 RUN yum -y update
 RUN yum -y install perl perl-libwww-perl perl-Crypt-SSLeay perl-LWP-Protocol-https gcc-c++ gnutls gnutls-devel gnutls-utils pkgconfig wget gettext
@@ -45,6 +48,11 @@ RUN make install
 
 COPY start_all.sh /home/irc/
 
+USER root
+WORKDIR /home/irc/inspircd
+RUN chown irc:irc logs
+
+USER irc
 WORKDIR /home/irc/
 
 # This is what runs everything
